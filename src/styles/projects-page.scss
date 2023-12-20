@@ -1,0 +1,166 @@
+@use 'variables' as v;
+
+.page.projects-page {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.projects-page {
+  .page_title {
+    padding-left: 100px;
+
+    @media screen and (max-width: 641px) {
+      padding-left: 70px;
+    }
+  }
+
+  .project {
+    padding: 80px 70px 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 641px) {
+      padding: 100px 45px 70px;
+    }
+
+    &_title {
+      font-size: 36px;
+      text-align: left; 
+      width: 100%;
+      max-width: 1100px;
+
+      @media screen and (max-width: 641px) {
+        font-size: 24px;
+      }
+    }
+
+    &_subtitle {
+      font-size: 24px;
+      text-align: left;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 641px) {
+        font-size: 18px;
+      }
+    }
+
+    &_description {
+      text-align: left;
+      line-height: 1.5;
+      font-size: 20px;
+      max-width: 1100px;
+
+      @media screen and (max-width: 641px) {
+        font-size: 14px;
+      }
+    }
+
+    &_tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 50px;
+
+      &_tool {
+        padding: 10px 15px;
+        border-radius: 12px;
+        border: 1px solid rgb(255, 255, 255);
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .tool--React.js {
+        background-color: v.$cerulean-blue;
+      }
+    }
+
+    &_images {
+      margin: 70px 0 50px;
+      display: flex;
+      justify-content: center;
+      justify-content: center;
+
+      @media screen and (max-width: 641px) {
+        flex-direction: column;
+      }
+
+      &_img {
+        object-fit: contain;
+        max-width: 700px;
+        max-height: 450px;
+      }
+
+      &_img-desktop {
+        width: calc(70% - 50px) !important;
+        margin-right: 50px;
+
+        @media screen and (max-width: 900px) {
+          width: calc(80% - 50px) !important;
+        }
+
+        @media screen and (max-width: 641px) {
+          width: 100% !important;
+          margin-right: 0;
+          margin-bottom: 50px;
+        }
+      }
+
+      &_img-mobile {
+        width: 30% !important;
+
+        @media screen and (max-width: 900px) {
+          width: 20% !important;
+        }
+
+        @media screen and (max-width: 641px) {
+          width: 100% !important;
+          max-height: 300px;
+        }
+      }
+    }
+  }
+}
+
+/* ====================== [ Start Carousel ] ====================== */
+
+.carousel .carousel-status {
+  text-shadow: none;
+  text-align: center;
+  font-size: 14px;
+  width: 80px;
+  right: calc(50% - 40px);
+  top: 65px;
+}
+
+.carousel .control-dots {
+  top: 40px;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+  opacity: 1;
+  background-color: #fffafa40;
+  padding: 10px;
+
+  @media screen and (max-width: 641px) {
+    padding: 5px;
+  }
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background-color: #fdfdfd6b;
+}
+
+/* ====================== [ End Carousel ] ====================== */

@@ -1,0 +1,145 @@
+@use 'variables' as v;
+
+.skills-page {
+  &_skills {
+    display: grid;
+    grid-template-columns: repeat(5, 13vw);
+    gap: 20px;
+    margin: 70px auto;
+    width: fit-content;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: repeat(5, auto);
+      gap: 10px;
+    }
+
+    @media screen and (max-width: 750px) {
+      grid-template-columns: repeat(3, 24vw);
+      gap: 10px;
+    }
+
+    &_skill {
+      height: 13vw;
+      min-width: 115px;
+      min-height: 115px;
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 10%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgb(255, 255, 255);
+
+      @media screen and (max-width: 750px) {
+        height: 24vw;
+        min-width: unset;
+        min-height: unset;
+      }
+
+      &.skill--js .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/js.png);
+      }
+
+      &.skill--react .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/react.png);
+      }
+
+      &.skill--html .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/html.png);
+      }
+      
+      &.skill--css .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/css.png);
+      }
+
+      &.skill--sass .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/sass.png);
+      }
+
+      &.skill--ts .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/ts.png);
+      }
+
+      &.skill--node .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/node.png);
+      }
+
+      &.skill--design .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/design.png);
+      }
+
+      &.skill--jest .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/jest.png);
+      }
+
+      &.skill--shopify .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/shopify.png);
+      }
+
+      &.skill--redux .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/redux.png);
+      }
+
+      &.skill--mongo .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/mongo.png);
+      }
+
+      &.skill--figma .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/figma.png);
+      }
+
+      &.skill--gpt .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/gpt.png);
+      }
+
+      &.skill--git .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/git.png);
+      }
+
+      &.skill--time .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/time.png);
+      }
+
+      &.skill--team .skills-page_skills_skill_icon{
+        background-image: url(../images/skills/team.png);
+      }
+
+      &.skill--emotion .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/emotion.png);
+      }
+
+      &.skill--problem .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/team.png);
+      }
+
+      &.skill--critical .skills-page_skills_skill_icon {
+        background-image: url(../images/skills/critical.png);
+      }
+
+      &_icon {
+        height: 50%;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 500px) {
+          margin-bottom: 10px;
+        }
+      }
+
+      &_title {
+        margin: 0;
+        font-weight: normal;
+        text-align: center;
+
+        @media screen and (max-width: 500px) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

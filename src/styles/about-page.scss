@@ -1,0 +1,140 @@
+@use 'variables' as v;
+
+.about-page {
+  &_text-container {
+    padding: 0 100px;
+    line-height: 1.5;
+
+    @media screen and (max-width: 900px) {
+      padding: 0 50px;
+    }
+
+    @media screen and (max-width: 641px) {
+      padding: 0;
+    }
+  }
+
+  &_points {
+    margin: 100px auto 70px;
+
+    @media screen and (min-width: 641px) {
+      max-width: 600px;
+      margin: 120px auto 100px;
+    }
+
+    &_point {
+      &:not(:last-child) {
+        margin-bottom: 70px;
+
+        @media screen and (max-width: 641px) {
+          margin-bottom: 50px;
+        }
+      }
+
+      &_circle {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+
+        @media screen and (max-width: 641px) {
+          width: 85px;
+          height: 85px;
+        }
+
+        &_year {
+          position: absolute;
+          left: 50%;
+          top: calc(50% - v.$point-year / 2);
+          font-size: v.$point-year;
+          line-height: 1;
+          margin: 0;
+
+          @media screen and (max-width: 641px) {
+            top: calc(50% - v.$point-year-mob / 2);
+          font-size: v.$point-year-mob;
+          }
+        }
+      }
+
+      &:first-child &_circle {
+        background-color: v.$red;
+      }
+
+      &:nth-child(2) &_circle {
+        background-color: v.$medium-blue;
+      }
+
+      &:nth-child(3) &_circle {
+        background-color: v.$dark-purple;
+      }
+
+      &:nth-child(4) &_circle {
+        background-color: v.$shamrock-green;
+      }
+
+      &_list {
+        padding-left: 130px;
+        font-size: 24px;
+        line-height: 1.2;
+        list-style: none;
+
+        @media screen and (max-width: 641px) {
+          padding-left: 0;
+          font-size: 14px;
+        }
+
+        &_li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.info-blocks {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 70px 0;
+}
+
+.lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  &_text {
+    margin: 0;
+    font-size: 1.8vw;
+    
+    @media screen and (max-width: 641px) {
+      font-size: 3.5vw;
+    }
+  }
+
+  &_images {
+    display: flex;
+    gap: 15px;
+
+    &_img {
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &--ua {
+        background-image: url(../images/languages/ua.svg);
+      }
+
+      &--en {
+        background-image: url(../images/languages/en.svg);
+      }
+
+      &--es {
+        background-image: url(../images/languages/es.svg);
+      }
+    }
+  }
+}
