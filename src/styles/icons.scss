@@ -1,0 +1,96 @@
+.icon--email,
+.icon--linkedin,
+.icon--github,
+.icon--tags,
+.icon--star,
+.icon--bulb,
+.icon--arrow-up,
+.icon--link {
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon--email {
+  background-image: url(../images/icons/email.svg);
+}
+
+.icon--linkedin {
+  background-image: url(../images/icons/linkedin.svg);
+}
+
+.icon--github {
+  background-image: url(../images/icons/github.svg);
+}
+
+.icon--tags {
+  background-image: url(../images/icons/tags.svg);
+}
+
+.icon--star {
+  background-image: url(../images/icons/grey-star.svg);
+}
+
+.icon--bulb {
+  background-image: url(../images/icons/bulb.svg);
+}
+
+.icon--arrow-up {
+  background-image: url(../images/arrow-up.png);
+}
+
+.icon--link {
+  background-image: url(../images/icons/link.png);
+}
+
+/* projects images */
+
+.project-img-01 {
+  background-image: url(../images/projects/01.jpg);
+}
+
+.project-img-02 {
+  background-image: url(../images/projects/02.jpg);
+}
+
+.project-img-03 {
+  background-image: url(../images/projects/03.jpg);
+}
+
+.project-img-04 {
+  background-image: url(../images/projects/04.jpg);
+}
+
+.project-img-05 {
+  background-image: url(../images/projects/05.jpg);
+}
+
+.project-img-06 {
+  background-image: url(../images/projects/06.jpg);
+}
+
+.project-img-07 {
+  background-image: url(../images/projects/07.jpg);
+}
+
+.project-img-08 {
+  background-image: url(../images/projects/08.jpg);
+}
+
+.project-img-09 {
+  background-image: url(../images/projects/09.jpg);
+}
+
+.project-img-10 {
+  background-image: url(../images/projects/10.jpg);
+}
+
+.pet-img-01 {
+  background-image: url(../images/projects/pet-01.png);
+}
+
+.pet-img-02 {
+  background-image: url(../images/projects/pet-02.png);
+}

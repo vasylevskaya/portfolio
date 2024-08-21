@@ -1,0 +1,51 @@
+[
+  {
+    "key": "frontendDev",
+    "en": "Frontend Developer"
+  },
+  {
+    "key": "olhaV",
+    "en": "Olha V."
+  },
+  {
+    "key": "mainPageDescription",
+    "en": "3 years of experience in Web Development. Dedicated to developing high quality websites providing best practices, clean code and creative solutions."
+  },
+  {
+    "key": "skills",
+    "en": "Skills"
+  }
+  ,
+  {
+    "key": "skillsAndTools",
+    "en": "Skills & Tools"
+  },
+  {
+    "key": "experience",
+    "en": "Experience"
+  },
+  {
+    "key": "education",
+    "en": "Education"
+  },
+  {
+    "key": "portfolio",
+    "en": "Portfolio"
+  },
+  {
+    "key": "projects",
+    "en": "Projects"
+  },
+  {
+    "key": "mainProjects",
+    "en": "Main Projects"
+  },
+  {
+    "key": "responsibilities",
+    "en": "Responsibilities"
+  },
+  {
+    "key": "petProjectsToDemonstrate",
+    "en": "Pet projects to demonstrate my skills and code style"
+  }
+]

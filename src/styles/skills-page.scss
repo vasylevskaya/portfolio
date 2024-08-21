@@ -1,0 +1,124 @@
+@use 'variables' as v;
+
+.skills-page.page {
+  padding: 100px 50px;
+
+  @media screen and (max-width: 641px) {
+    padding: 50px 20px;
+  }
+}
+
+.skills-page {
+  display: grid;
+  grid-template-columns: 300px auto;
+  max-width: 1000px;
+  margin: auto;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &_text-container,
+  &_skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_text-container {
+    position: relative;
+    padding: 80px 40px;
+
+    @media screen and (max-width: 900px) {
+      padding: 40px 0;
+    }
+
+    @media screen and (max-width: 641px) {
+      padding: 30px 0;
+    }
+
+    .icon--star {
+      position: absolute;
+      top: 30px;
+      left: 160px;
+      height: 32px;
+      width: 33px;
+
+      @media screen and (max-width: 900px) {
+       top: 0;
+      }
+
+      @media screen and (max-width: 641px) {
+        left: 100px;
+      }
+    }
+
+    &_subtitle {
+      font-size: 20px;
+      font-weight: 500;
+      color: v.$contrast-color;
+
+      @media screen and (max-width: 641px) {
+        font-size: 14px;
+      }
+    }
+
+    &_title {
+      font-size: 64px;
+      font-weight: 700;
+      margin: 10px 0 0;
+
+      @media screen and (max-width: 641px) {
+        font-size: 44px;
+      }
+    }
+  }
+
+  &_skills {
+    padding: 30px 40px;
+    border-left: 1px v.$dark-grey dashed;
+
+    @media screen and (max-width: 900px) {
+      border-left: none;
+      border-top: 1px v.$dark-grey dashed;
+      padding: 40px 0;
+    }
+
+    @media screen and (max-width: 641px) {
+      padding: 30px 0;
+    }
+
+    &_skill {
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &_title {
+        font-size: 20px;
+        font-weight: 700;
+
+        @media screen and (max-width: 900px) {
+          margin-top: 0;
+        }
+      }
+
+      &_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        list-style: none;
+        padding: 0;
+
+        &_item {
+          background-color: v.$contrast-color;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 10px;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
