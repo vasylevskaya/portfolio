@@ -12,12 +12,7 @@ export const experienceTimeline = [
     date: 'Jan 24 - Jun 24',
     title: 'Recovo',
     subtitle: 'Barcelona, Spain',
-    content: [
-      `Developed new pages and features for the websites`,
-      `Refactored and optimized legacy code`,
-      `Performed testing with Jest`,
-      `Cooperated with the team`
-    ],
+    img: 'company-3',
     techStack: ["React.js", "Next.js", "TypeScript", "Bootstrap"],
     projects: [
       {
@@ -63,16 +58,8 @@ export const experienceTimeline = [
     date: 'Jun 22 - Jul 23',
     title: 'Vectoriam',
     subtitle: 'Madrid, Spain',
-    content: [
-      `Developed high-quality websites on React.js
-      implementing full responsiveness and cross-browser
-      compatibility`,
-      `Built e-commerce platforms on Shopify and successfully
-      customized Shopify themes that align with client
-      requirements.`,
-      `Improved websites’ performance by optimizing code,
-      reducing load times, and minimizing resource usage.`
-    ],
+    img: 'company-2',
+    description: 'I have built various websites with Shopify, React.js, Next.js. Here are some of my favorite projects:',
     projects: [
       {
         title: "New website for a popular Spanish men's clothing brand",
@@ -114,11 +101,7 @@ export const experienceTimeline = [
     date: 'Jan 21 - May 22',
     title: 'Harnosoft',
     subtitle: 'Lviv, Ukraine',
-    content: [
-      'Contributed to developing websites with React.js',
-      `Implemented responsive design across different devices and
-      screen sizes and ensure cross-browser compatibility`
-    ],
+    img: 'company-1',
     projects: [
       {
         title: "Job board website for truck drivers",
@@ -138,6 +121,11 @@ export const experienceTimeline = [
     openedByDefault: true,
     date: 'since 2021',
     title: 'Freelance',
+    description: `
+      During the time when I was not employed by companies,
+      I worked independently on projects for various
+      businesses. Here are some of them:
+    `,
     projects: [
       {
         title: "New website for an industrial company",
@@ -153,7 +141,6 @@ export const experienceTimeline = [
       },
       {
         title: "New website for the sushi delivery",
-        img: 'project-img-09',
         description: `
           A new website on React.js for a sushi delivery service according to the design.
           I developed home page, menu page, a cart, and contact page. Implemented user
@@ -163,7 +150,6 @@ export const experienceTimeline = [
       },
       {
         title: "New website for the yoga studio",
-        img: 'project-img-10',
         description: `
           I developed a whole website on React.js. Created home, about us, reviews,
           contact pages. Provided user authentication. Implemented functionality
@@ -183,6 +169,7 @@ export const educationTimeline = [
     date: '2017-2021',
     title: 'Marketing',
     subtitle: 'Taras Shevchenko National University of Kyiv',
+    img: 'knu'
   },
   {
     id: 2,
@@ -190,11 +177,7 @@ export const educationTimeline = [
     date: '2020',
     title: 'Frontend Development Basics',
     subtitle: 'Mate Academy',
-    content: [
-      'HTML',
-      'CSS',
-      'JavaScript'
-    ]
+    img: 'ma'
   },
   {
     id: 3,
@@ -202,13 +185,7 @@ export const educationTimeline = [
     date: '2021',
     title: 'Frontend Development Advanced',
     subtitle: 'Mate Academy',
-    content: [
-      'React.js',
-      'TypeScript',
-      'Vue.js',
-      'Algorithms and Data Structures',
-      'Object Oriented Programming', 
-    ]
+    img: 'ma'
   },
   {
     id: 4,
@@ -216,10 +193,7 @@ export const educationTimeline = [
     date: '2022',
     title: 'Backend Development Basics',
     subtitle: 'Mate Academy',
-    content: [
-      'Node.js',
-      'SQL Basics',
-    ]
+    img: 'ma'
   },
   {
     id: 5,
@@ -227,12 +201,7 @@ export const educationTimeline = [
     date: '2023',
     title: 'UX/UI Design Basics',
     subtitle: 'Mate Academy',
-    content: [
-      'Figma',
-      'UI Design',
-      'Grids',
-      'Typography Basics'
-    ]
+    img: 'ma'
   },
 ]
 

@@ -14,18 +14,18 @@ const ProjectsPage = () => {
     <Element name={headerNav.PROJECTS}>
       <div className='projects-page page'>
         <div className='projects-page_carousel'>
-          
-          <Carousel items={petProjects.map((project) => <Project project={project} />)} />
+          <Carousel
+            items={petProjects.map((project) => <Project project={project} />)}
+          />
         </div>
         <div className="projects-page_text-container">
-          <div className='icon--star' />
           <AnimText>
             <div className="projects-page_text-container_subtitle">
               {t('portfolio')}
             </div>
           </AnimText>
           <AnimText>
-            <p className="projects-page_text-container_title">
+            <p className="projects-page_text-container_title text-gradient">
               {t('projects')}
             </p>
           </AnimText>

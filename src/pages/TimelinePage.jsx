@@ -5,7 +5,6 @@ import { headerNav, experienceTimeline, educationTimeline } from '../data/conten
 import TimelineList from '../components/TinelineList';
 
 const TimelinePage = () => {
-  console.log(window.scrollY, window);
   return (
     <div className='timeline-page page'>
       <Element name={headerNav.EXPERIENCE}>

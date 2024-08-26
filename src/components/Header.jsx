@@ -29,12 +29,9 @@ const Header = () => {
           smooth={true}
           offset={-70}
           duration={500}
+          className='header_logo bg-gradient'
         >
-          <img
-            className='header_image hidden-mobile pointer'
-            src={headerImg}
-            alt='compluter logo'
-          />
+          OV
         </Link>
       )}
       <nav className='header_nav hidden-mobile'>

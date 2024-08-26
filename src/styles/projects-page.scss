@@ -45,7 +45,6 @@
     &_subtitle {
       font-size: 20px;
       font-weight: 500;
-      color: v.$contrast-color;
       text-align: right;
 
       @media screen and (max-width: 641px) {
@@ -113,7 +112,6 @@
     &_link {
       z-index: 10000;
       position: relative;
-      background-color: v.$contrast-color;
       padding: 7px;
       border-radius: 5px;
     }
@@ -160,8 +158,8 @@
       margin-top: 20px;
 
       &_tool {
-        background-color: v.$contrast-color;
-        color: white;
+        background-color: v.$item-grey;
+        color: v.$main-text;
         padding: 10px 20px;
         border-radius: 10px;
         font-weight: 500;

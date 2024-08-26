@@ -11,11 +11,10 @@ const SkillsPage = () => {
     <Element name={headerNav.SKILLS}>
       <div className='skills-page page'>
         <div className="skills-page_text-container">
-          <div className='icon--star' />
             <div className="skills-page_text-container_subtitle">
               {t('skillsAndTools')}
             </div>
-            <p className="skills-page_text-container_title">
+            <p className="skills-page_text-container_title text-gradient">
               {t('skills')}
             </p>
         </div>

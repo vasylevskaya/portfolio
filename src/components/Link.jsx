@@ -7,18 +7,18 @@ const Link = ({
 
 }) => {
   return (
-    <div className="link-container">
-      {!!iconClass && (
-        <div className={iconClass} />
-      )}
-      <a
-        className={linkClass}
-        href={href}
-        title={title}
+    <a
+      className={linkClass}
+      href={href}
+      title={title}
       >
-        {text}
-      </a>
-    </div>
+      <div className="link-container">
+        {!!iconClass && (
+          <div className={iconClass} />
+        )}
+          {text}
+      </div>
+    </a>
   )
 }
 
