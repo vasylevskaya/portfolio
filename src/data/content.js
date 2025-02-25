@@ -263,6 +263,19 @@ export const skills = [
 
 export const petProjects = [
   {
+    imgClass: 'pet-img-03',
+    title: 'Weather app',
+    description: `
+      By default, it shows the weather for the user's current location. If the user doesn't allow access to their location, they can use a search input to retrieve weather data for a specific location.
+      It fetches real data from an API and provides information about the current temperature, UV index, wind, humidity, cloud cover, precipitation, visibility, and pressure.
+      It displays the location on a map.
+      The background changes according to whether it's day or night, as well as the intensity of cloud cover.
+    `,
+    techStack: ['Vue.js', 'HTML', 'CSS', 'Leaflet Library', 'Rapid API'],
+    link: 'https://github.com/vasylevskaya/vue-todo-list',
+
+  },
+  {
     imgClass: 'pet-img-01',
     title: 'Todo app',
     description: `

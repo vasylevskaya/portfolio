@@ -10,9 +10,9 @@ const HomePage = () => {
     <>
       <Background />
       <MainPage />
-      <TimelinePage />
       <SkillsPage />
       <ProjectsPage />
+      <TimelinePage />
     </>
   );
 };
