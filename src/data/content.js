@@ -7,8 +7,40 @@ export const headerNav = {
 
 export const experienceTimeline = [
   {
+    id: 0,
+    openedByDefault: false,
+    date: 'Mar 25 - May 26',
+    title: 'Medify',
+    subtitle: 'Barcelona, Spain',
+    img: 'company-4',
+    techStack: ['Vue.js 3', 'Composition API', 'Vue Router', 'Pinia', 'Vuex', 'Jest', 'Vitest'],
+    projects: [
+      {
+        title: "Main Platform",
+        subtitle: "Software that shows patients interactive 3D visual content and collects their data through questionnaires, with content managed via a CMS",
+        description: [
+          'Rewrote the entire frontend from legacy ActionScript to Vue.js 3, applying clean architecture principles by separating business logic, infrastructure, and UI layers',
+          'Implemented new features: custom navigation, questionnaire progress bar, localization.',
+          'Added accessibility support: high-contrast mode and full screen reader compatibility',
+          'Rebuilt the UI to be fully responsive across all devices',
+          'Adjusted API usage, collaborating with the backend team as they migrated from legacy backend',
+          'Covered all complex calculations with Jest tests, cutting down manual testing after new releases.',
+        ],
+      },
+      {
+        title: "Dashboard",
+        subtitle: "Software for sending digital intakes, viewing statistics, and accessing received patient data ",
+        description: [
+          'Migrated the codebase from Vue 2 to Vue 3',
+          'Refined responsiveness and accessibility across the dashboard',
+          'Covered core functionality with Vitest tests',
+        ],
+      },
+    ],
+  },
+  {
     id: 1,
-    openedByDefault: true,
+    openedByDefault: false,
     date: 'Jan 24 - Jun 24',
     title: 'Recovo',
     subtitle: 'Barcelona, Spain',
@@ -19,47 +51,40 @@ export const experienceTimeline = [
         title: "Fabric Marketplace",
         subtitle: "Company Main Website",
         img: 'project-img-01',
-        description: `
-          I contributed to developing a comprehensive shop page with advanced
-          filtering options and a wishlist feature. I also implemented account
-          pages, enabling buyers and sellers to manage their personal information,
-          products, orders, billing, and shipping, and receive announcements.
-          Additionally, I participated in developing functionality that collects
-          and stores data to improve user experience and personalize content.
-        `,
+        description: [
+          'Developed an Account Page enabling users to manage personal information, products, orders, billing, and shipping, and receive announcements.',
+          'Implemented wishlist feature',
+          'Developed functionality for collecting and storing user data to provide a more personalized user experience.',
+          'Covered over 75% of pages with unit tests and refactored over 80% of legacy code.'
+        ],
       },
       {
         title: "Extended CMS Solution",
         subtitle: "Custom Platform",
         img: 'project-img-02',
-        description: `
-          Participated in migrating from WordPress to custom platform on React.js.
-          with expanded and tailored functionalities. New website provides ability
-          to tadd, delete, and manage  products, users, and orders, along with blog
-          articles, shop page filters and more. The system offers a strong and flexible
-          content management solution that meets the company's unique needs.
-        `,
+        description: [
+          'Played a key role in migrating the platform from WordPress to a custom CMS, which significantly improved content team efficiency.',
+          'Implemented functionality to manage products, users, orders, blog articles, and custom filters. The system offers a strong and flexible content management solution that meets the company\'s unique needs.'
+        ]
       },
       {
         title: "Circularity Inventory Management Software",
+        subtitle: 'This tool simplifies inventory tracking and enhences material lifecycle management.',
         img: 'project-img-03',
-        description: `
-          Contributed to implementing new digital inventory management software with
-          customizable filters and a search engine. This tool simplifies inventory
-          tracking and enhences material lifecycle management. Developed login and
-          registration pages, password recovery functionality, and user management features.
-        `,
+        description: [
+          `Developed sign in and sign up pages, password recovery, and user management features.`
+        ],
       }
     ]
   },
   {
     id: 2,
-    openedByDefault: true,
+    openedByDefault: false,
     date: 'Jun 22 - Jul 23',
     title: 'Vectoriam',
     subtitle: 'Madrid, Spain',
     img: 'company-2',
-    description: 'I have built various websites with Shopify, React.js, Next.js. Here are some of my favorite projects:',
+    techStack: ["React.js", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS", "Shopify"],
     projects: [
       {
         title: "New website for a popular Spanish men's clothing brand",
@@ -97,10 +122,11 @@ export const experienceTimeline = [
   },
   {
     id: 3,
-    openedByDefault: true,
+    openedByDefault: false,
     date: 'Jan 21 - May 22',
     title: 'Harnosoft',
     subtitle: 'Lviv, Ukraine',
+    techStack: ["React.js", "TypeScript", "JavaScript", "HTML", "CSS", "Formik"],
     img: 'company-1',
     projects: [
       {
@@ -118,7 +144,7 @@ export const experienceTimeline = [
   },
   {
     id: 4,
-    openedByDefault: true,
+    openedByDefault: false,
     date: 'since 2021',
     title: 'Freelance',
     description: `
@@ -207,17 +233,22 @@ export const educationTimeline = [
 
 export const skills = [
   {
-    id: 1,
-    title: 'Frontend Development',
+    title: 'Languages and Frameworks',
     list: [
       'JavaScript',
       'TypeScript', 
       'React.js + Redux/Recoil',
       'Next.js',
-      'Vue.js',
+      'Vue.js + Composition API + Pinia/Vuex',
+    ]
+  },
+  {
+    title: 'Styling',
+    list: [
+      'Figma',
       'HTML',
       'CSS',
-      'SASS',
+      'Sass (SCSS)',
       'BEM',
       'Bootstrap',
       'Bulma',
@@ -225,48 +256,66 @@ export const skills = [
     ]
   },
   {
-    id: 2,
-    title: 'Backend Development',
+    title: 'Backend and APIs',
     list: [
       'Node.js',
       'Express', 
       'Fetch',
       'REST API',
+      'GraphQl API',
       'Web sockets'
     ]
   },
   {
-    id: 3,
-    title: 'Testing',
+    title: 'AI Tools',
     list: [
+      'Cursor',
+      'ChatGPT',
+      'Claude Code',
+    ]
+  },
+  {
+    title: 'Tools & Testing',
+    list: [
+      'Git',
+      'Github',
+      'Gitlab',
+      'Docker',
+      'AWS',
       'Jest'
     ]
   },
   {
-    id: 4,
-    title: 'E-commerce',
+    title: 'Practices',
     list: [
-      'Shopify',
-      'Liquid'
-    ]
-  },
-  {
-    id: 5,
-    title: 'Version Control',
-    list: [
-      'Git',
-      'Github',
-      'Gitlab'
+      'OOP',
+      'SOLID',
+      'Algorithms',
+      'SDLC (Waterfall, Agile - Scrum, Kanban)'
     ]
   }
 ]
 
 export const petProjects = [
   {
+    imgClass: 'pet-img-04',
+    title: 'CRM Pilates',
+    description: `
+      Portfolio CRM for a Pilates instructor - an app for managing clients, weekly schedule, class pricing, and revenue statistics.
+      Built with React, TypeScript, Vite, and IndexedDB (Dexie).
+      Layered architecture (domain → application → infrastructure → UI) with unit tests on core business logic.
+      Architecture decisions documented in ADRs.
+    `,
+    techStack: ['React.js', 'HTML', 'CSS', 'TypeScript', 'Vite', 'IndexedDB (Dexie)', 'Cursor'],
+    link: 'https://github.com/vasylevskaya/crm-pilates',
+
+  },
+  {
     imgClass: 'pet-img-03',
     title: 'Weather app',
     description: `
-      By default, it shows the weather for the user's current location. If the user doesn't allow access to their location, they can use a search input to retrieve weather data for a specific location.
+      By default, it shows the weather for the user's current location.
+      If the user doesn't allow access to their location, they can use a search input to retrieve weather data for a specific location.
       It fetches real data from an API and provides information about the current temperature, UV index, wind, humidity, cloud cover, precipitation, visibility, and pressure.
       It displays the location on a map.
       The background changes according to whether it's day or night, as well as the intensity of cloud cover.
@@ -279,9 +328,8 @@ export const petProjects = [
     imgClass: 'pet-img-01',
     title: 'Todo app',
     description: `
-      I developed a simple Todo app that helps users manage their tasks.
-      The app allows users to add, edit, and delete todos, as well as
-      track whether tasks are completed or not. I also implemented a
+      A simple Todo app that helps users manage their tasks: to add, to edit, and to delete,
+      as well as to track whether tasks are completed or not. I also implemented a
       filter feature, letting users view only completed or uncompleted tasks,
       making it easier to stay organized and focused. This app is user-friendly
       and boosts productivity by keeping tasks clear and manageable.
@@ -294,11 +342,10 @@ export const petProjects = [
     imgClass: 'pet-img-02',
     title: 'Rick and Morty',
     description: `
-      I built a Rick and Morty themed website with three main pages:
-      Home, Watch List, and Characters. The Home page introduces users
-      to the site. On the Watch List page, users can add and manage shows
-      they want to watch later. The Characters page displays a list of all
-      characters, where users can filter by species, status, and gender,
+      Just a funny little project I built back in 2022 :)
+      A Rick and Morty themed website with a Watch List page, where users can
+      add and manage shows they want to watch later. And the Characters Page, where
+      users can filter by species, status, and gender,
       and navigate through the list with pagination.
     `,
     techStack: ['React.js', 'React Router', 'Recoil', 'SASS'],

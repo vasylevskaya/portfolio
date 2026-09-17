@@ -20,7 +20,7 @@ const SkillsPage = () => {
         </div>
         <div className="skills-page_skills">
           {skills.map((skill) => (
-            <Skill key={skill.id} skill={skill} />
+            <Skill key={skill.title} skill={skill} />
           ))}
         </div>
       </div>
