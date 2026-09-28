@@ -3,7 +3,6 @@ import { Link } from 'react-scroll';
 import IconLink from './Link';
 import { headerNav } from '../data/content';
 import MenuMob from './MenuMob';
-import headerImg from '../images/header-logo.png';
 
 const Header = () => {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
@@ -21,18 +20,6 @@ const Header = () => {
       
       {menuIsVisible && (
         <MenuMob setMenuIsVisible={setMenuIsVisible} />
-      )}
-      {headerImg && (
-        <Link
-          to={'top'}
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          className='header_logo bg-gradient'
-        >
-          OV
-        </Link>
       )}
       <nav className='header_nav hidden-mobile'>
         <ul className='header_nav_ul'>

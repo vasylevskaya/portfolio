@@ -51,7 +51,7 @@ const MainPage = () => {
                 iconClass='icon--email'
               />
               <Link
-                href='https://www.linkedin.com/in/olha-vasylevska-74633a193/'
+                href='https://www.linkedin.com/in/olha-vasylevska/'
                 title='Linkedin'
                 text='Linkedin'
                 linkClass=''

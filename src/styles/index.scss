@@ -80,7 +80,14 @@ code {
   gap: 7px;
   padding: 10px 15px;
   border-radius: 10px;
-  border: 1px solid #fff;
+  border: 1.5px solid #fff;
+  width: fit-content;
+  transition: 200ms ease-in-out;
+  font-weight: 700;
+
+  &:hover {
+    border-color: #f175d4;
+  }
 }
 
 /* ====================== [ Start header ] ====================== */
@@ -113,21 +120,11 @@ code {
     border: none;
   }
 
-  &_logo {
-    padding: 10px;
-    border-radius: 50%;
-    font-weight: 700;
-    cursor: pointer;
-  }
-
   &_nav_ul {
-    position: absolute;
-    top: 10px;
-    right: 50%;
-    transform:translateX(50%);
     display: flex;
     list-style: none;
     gap: 35px;
+    padding-left: 0;
 
     &_link {
       cursor: pointer;

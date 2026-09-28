@@ -5,7 +5,8 @@
 .icon--star,
 .icon--bulb,
 .icon--arrow-up,
-.icon--link {
+.icon--link,
+.icon--reco {
   height: 20px;
   width: 20px;
   background-repeat: no-repeat;
@@ -43,6 +44,10 @@
 
 .icon--link {
   background-image: url(../images/icons/link.png);
+}
+
+.icon--reco {
+  background-image: url(../images/icons/recommendation.svg);
 }
 
 /* projects images */

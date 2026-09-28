@@ -57,8 +57,8 @@
         }
 
         @media screen and (max-width: 641px) {
-          display: flex;
-          flex-direction: column;
+          // display: flex;
+          // flex-direction: column;
 
           .date {
             color: v.$secondary-text;
