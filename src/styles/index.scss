@@ -53,14 +53,14 @@ code {
 
 .page {
   width: 100%;
-  padding: 50px;
+  padding: v.$padding-desktop;
 
   @media screen and (max-width: 900px) {
-    padding: 50px;
+    padding: 50px v.$padding-tablet;
   }
 
   @media screen and (max-width: 641px) {
-    padding: 50px 20px;
+    padding: 50px v.$padding-mobile;
   }
 
   &_title {
@@ -101,12 +101,16 @@ code {
   align-items: center;
   height: v.$header-height;
   width: 100%;
-  padding: 10px 50px;
+  padding: 10px v.$padding-desktop;
   background-color: v.$background-header;
   z-index: 100;
 
   @media screen and (max-width: 900px) {
-    padding: 10px 30px;
+    padding: 10px v.$padding-tablet;
+  }
+
+  @media screen and (max-width: 641px) {
+    padding: 10px v.$padding-mobile;
   }
 
   &_menu-btn {
@@ -114,7 +118,7 @@ code {
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
-    width: 40px;
+    width: 28px;
     height: 40px;
     background-color: transparent;
     border: none;
@@ -208,8 +212,8 @@ code {
 /* ====================== [ Start progress-wrap ] ====================== */
 .progress-wrap {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: v.$padding-desktop;
+  right: v.$padding-desktop;
   height: 44px;
   width: 44px;
   cursor: pointer;
@@ -224,6 +228,16 @@ code {
   -webkit-transition: all 400ms linear;
   -o-transition: all 400ms linear;
   transition: all 400ms linear;
+
+  @media screen and (max-width: 900px) {
+    bottom: v.$padding-tablet;
+    right: v.$padding-tablet;
+  }
+
+  @media screen and (max-width: 900px) {
+    bottom: v.$padding-mobile;
+    right: v.$padding-mobile;
+  }
 }
 
 .progress-wrap.active-progress {
@@ -263,11 +277,6 @@ code {
 .progress-wrap svg.progress-circle path {
   stroke: v.$white;
   stroke-width: 4;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 400ms linear;
-  -o-transition: all 400ms linear;
-  transition: all 400ms linear;
 }
 /* ====================== [ End progress-wrap ] ====================== */
 

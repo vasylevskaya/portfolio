@@ -39,14 +39,14 @@
 
       &_main {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+        // align-items: center;
+        // flex-wrap: wrap;
 
         &_img {
           flex-shrink: 0;
           min-width: 50px;
           min-height: 50px;
-          background-size: contain;
+          background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
           background-color: #fff;
@@ -84,6 +84,7 @@
         .date {
           width: 200px;
           text-align: right;
+          margin: 0;
         }
 
         p.description {

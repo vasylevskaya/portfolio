@@ -152,7 +152,7 @@ export const experienceTimeline = [
     openedByDefault: false,
     date: 'since 2021',
     title: 'Freelance',
-    description: `
+    subtitle: `
       During the time when I was not employed by companies,
       I worked independently on projects for various
       businesses. Here are some of them:
@@ -198,42 +198,29 @@ export const educationTimeline = [
     id: 1,
     openedByDefault: false,
     date: '2017-2021',
-    title: 'Marketing',
-    subtitle: 'Taras Shevchenko National University of Kyiv',
+    title: 'Taras Shevchenko National University of Kyiv',
+    subtitle: 'Marketing',
     img: 'knu'
   },
   {
     id: 2,
     openedByDefault: false,
-    date: '2020',
-    title: 'Frontend Development Basics',
-    subtitle: 'Mate Academy',
+    date: 'since 2020',
+    title: 'Mate Academy',
+    subtitle: 'Kyiv, Ukraine',
+    projects: [
+      {
+        title: 'Completed Courses',
+        description: [
+          'Frontend Development Basics',
+          'Frontend Development Advanced',
+          'Backend Development Basics',
+          'UX/UI Design Basics'
+        ]
+      }
+    ],
     img: 'ma'
-  },
-  {
-    id: 3,
-    openedByDefault: false,
-    date: '2021',
-    title: 'Frontend Development Advanced',
-    subtitle: 'Mate Academy',
-    img: 'ma'
-  },
-  {
-    id: 4,
-    openedByDefault: false,
-    date: '2022',
-    title: 'Backend Development Basics',
-    subtitle: 'Mate Academy',
-    img: 'ma'
-  },
-  {
-    id: 5,
-    openedByDefault: false,
-    date: '2023',
-    title: 'UX/UI Design Basics',
-    subtitle: 'Mate Academy',
-    img: 'ma'
-  },
+  }
 ]
 
 export const skills = [
