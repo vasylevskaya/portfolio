@@ -53,6 +53,17 @@ const TimelineListItem = ({
             ))}
           </div>
         )}
+        {item.recommendation && (
+          <a
+            href={item.recommendation}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-container"
+          >
+            <div className="icon--reco" aria-hidden="true"></div>
+            Recommendation Letter
+          </a>
+        )}
         {projectsToggleEnabled && item.projects && (
           <div className='timeline_item_main_projects-toggle'>
             <button

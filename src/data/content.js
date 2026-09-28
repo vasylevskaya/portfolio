@@ -1,3 +1,6 @@
+import recommendationMedify from '../assets/files/Recommendation_Medify.pdf';
+import recommendationRecovo from '../assets/files/Recommendation_Recovo.pdf';
+
 export const headerNav = {
   EXPERIENCE: 'experience',
   EDUCATION: 'education',
@@ -13,6 +16,7 @@ export const experienceTimeline = [
     title: 'Medify',
     subtitle: 'Barcelona, Spain',
     img: 'company-4',
+    recommendation: recommendationMedify,
     techStack: ['Vue.js 3', 'Composition API', 'Vue Router', 'Pinia', 'Vuex', 'Jest', 'Vitest'],
     projects: [
       {
@@ -45,6 +49,7 @@ export const experienceTimeline = [
     title: 'Recovo',
     subtitle: 'Barcelona, Spain',
     img: 'company-3',
+    recommendation: recommendationRecovo,
     techStack: ["React.js", "Next.js", "TypeScript", "Bootstrap"],
     projects: [
       {
@@ -321,7 +326,7 @@ export const petProjects = [
       The background changes according to whether it's day or night, as well as the intensity of cloud cover.
     `,
     techStack: ['Vue.js', 'HTML', 'CSS', 'Leaflet Library', 'Rapid API'],
-    link: 'https://github.com/vasylevskaya/vue-todo-list',
+    link: 'https://github.com/vasylevskaya/vue-weather-app',
 
   },
   {

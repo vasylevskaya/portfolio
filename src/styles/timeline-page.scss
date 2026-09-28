@@ -106,6 +106,15 @@
         }
       }
 
+      .link-container {
+        margin-top: 15px;
+        margin-left: 80px;
+
+        @media screen and (max-width: 641px) {
+          margin-left: 0;
+        }
+      }
+
       &_main_projects-toggle {
         border-top: 1px v.$dark-grey dashed;
         display: flex;
